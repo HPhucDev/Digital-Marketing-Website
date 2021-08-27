@@ -1,0 +1,44 @@
+.main__products{
+    &--items{
+        display: flex;
+    }
+    &--card{
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        padding: 2rem;
+        &--image{
+            position: relative;
+            &-iphone{
+                border-radius: 30px;
+                padding: 2rem 3rem 2.4rem 3rem;
+                background-color: #F2F2F2;
+            }
+            &-ipad{
+                border-radius: 30px;
+                padding: 2.5rem 3rem 5rem 3rem;
+                background-color: #F2F2F2;
+            }
+            &-mac{
+                border-radius: 30px;
+                padding: 3.7rem 3rem 3rem 3rem;
+                background-color:#F2F2F2;
+            }
+        }
+        &--title{
+            margin: 30px;
+            font-size: 25px;
+            font-family: 'IBM',cursive;
+            font-weight: bolder;
+            text-decoration: none;
+            color:  rgb(59, 59, 61);
+            &:hover{
+                text-decoration: none;
+                color:  rgb(59, 59, 61);
+            }
+        }
+    }
+
+}
+   
+   

@@ -1,0 +1,57 @@
+/*  Dark Mode Button */
+.darkmode{
+    display: flex;
+    justify-content: space-between;
+    margin: -0.2rem  2rem  0rem 2rem;
+    max-height: 4vh;
+}
+.switch {
+    width: 55px;
+    height: 25px;
+    border-radius: 20px;
+    background-color: rgba(24, 23, 23, 0.692);
+    display: flex;
+    cursor: pointer;
+}
+.flicker {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 2.5px;
+    margin-left: -21px;
+    transition: 0.4s;
+    box-shadow: 
+    inset 4px 4px 4px rgb(255,255,255),
+    inset -4px -4px 4px rgb(195 193 198 / 90%);
+    cursor: pointer;
+}
+.sun-icon{
+    opacity: 1;
+    margin-left: 2.6px;
+    margin-top:1.8px;
+    width: 22px;
+    height: 22px;
+    cursor:pointer;
+}
+.moon-icon {
+    margin-top: 4.4px;
+    margin-left: 11px;
+    width: 17px;
+    height: 17px;
+    cursor:pointer;
+}
+.dark {
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 0.3s;
+}
+.dark > * {
+    color:rgb(255, 255, 255);
+}  
+.dark .flicker { /*Animation mode */
+    transform: translateX(28px);
+    transition: 0.3s;
+}
+/*  Dark Mode Button */
+/* Search Button */
+

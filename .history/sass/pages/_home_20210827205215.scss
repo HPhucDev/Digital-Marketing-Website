@@ -1,0 +1,16 @@
+.main{
+    &___products{
+        width: 100%;
+        &--items{
+            align-items: center;
+            padding: 3rem;
+        }
+        &--card{
+           &--image{
+               background-color: darkgray;
+           }
+
+        }
+    }
+   
+}

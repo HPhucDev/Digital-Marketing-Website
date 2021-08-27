@@ -1,0 +1,13 @@
+.main{
+    &___products{
+        &--items{
+            display: flex;
+            width: 100%;
+            & a{
+                padding:1rem;
+            }
+        }
+        
+    }
+   
+}

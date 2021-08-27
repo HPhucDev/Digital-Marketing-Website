@@ -1,0 +1,15 @@
+.main{
+    &___products{
+        width: 100%;
+        &--items{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &--card{
+            
+            background-color: rgb(164, 166, 168);
+        }
+    }
+   
+}

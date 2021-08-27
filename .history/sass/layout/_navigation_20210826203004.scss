@@ -1,0 +1,57 @@
+.navbar {
+    border-bottom:1px solid rgba(216, 214, 214, 0.486);
+    box-shadow: 1px 1px rgba(216, 214, 214, 0.486);
+    &__brand{ 
+        display: flex;
+        align-items: center;
+        font-family: 'Oxanium',cursive;
+        font-size: 30px;
+        font-weight: 600;
+        text-decoration: none;
+        color: black;
+    }  
+    &__search{
+        max-height: 4.2vh;
+        &--dropdown{
+            position: relative;
+            display: inline-block;
+            &:hover{
+                & .navbar__search--dropdown--content {
+                    display: block;
+                }
+            }
+            &--btn{
+                color: black;
+                font-size: 16px;
+                height: 4.2vh;
+                margin-right: -2px;
+            }
+            &--content{
+                display: none;
+                position: absolute;
+                background-color: #f1f1f1;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+                & a{
+                    color: black;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    display: block;
+                    &:hover {
+                        background-color:#04AA6D;
+                      
+                    }
+                }
+            }
+        }
+        &--input{
+            width: 300px;
+        }
+    }
+    &__phone{
+        &--icon{
+            font-size: 25px;
+        }
+    }
+}

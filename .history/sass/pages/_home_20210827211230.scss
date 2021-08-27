@@ -1,0 +1,15 @@
+.main__products{
+    &--items{
+        display: flex;
+    }
+    &--card{
+        display:grid;
+        & a{
+            align-items: center;
+        }
+        
+    }
+
+}
+   
+   

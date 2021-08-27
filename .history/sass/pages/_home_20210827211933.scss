@@ -1,0 +1,18 @@
+.main__products{
+    &--items{
+        display: flex;
+    }
+    &--card{
+        display: grid;
+        align-items: center;
+        padding: 1rem;
+        background-color: darkgrey;
+        &--image{
+            padding: 1rem;
+            background-color: darkgrey;
+        }
+    }
+
+}
+   
+   

@@ -1,0 +1,45 @@
+.navbar{
+    border-bottom:1px solid rgba(216, 214, 214, 0.486);
+    box-shadow: 1px 1px rgba(216, 214, 214, 0.486);
+    background-color: rgba(0, 0, 0, 0.8);
+    &__brand{ 
+        margin: 0rem  2rem  0rem 2rem;
+        display: flex;
+        align-items: center;
+        font-family:'IBM',cursive;
+        font-size: 20px;
+        text-decoration: none;
+        color:  azure;
+        .navbar__brand--logo{
+            margin-top: -10px;
+        }
+    }  
+    &__tool{
+        &--items{
+            &--links{
+                margin: 0rem  2rem  0rem 2rem;
+                & a{
+                    color: azure;
+                    text-decoration: none;
+                    list-style: none;
+                    font-family: 'IBM',cursive;
+                    font-size: 1rem;
+                    font-weight: 200;
+                    position: relative;
+                } 
+            }
+        }
+    }
+    &__search{
+        max-height: 4.2vh;
+        &--btn{
+            margin: 0rem  2rem  0rem 2rem;
+            background-color: transparent;
+            border: none;    
+            &--icon{
+                color: azure;
+            }
+        }
+    }
+    
+}

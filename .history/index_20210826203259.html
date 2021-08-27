@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITshop</title>
+    <link rel = "icon" href = "./images/logo/Logo1.png" >
+     <!-- Fontawesome icons -->
+     <link rel="stylesheet" href="./css/vendors/fontawesome_5.15.4/all.min.css">
+    <!-- Bootstrap CSS File -->
+    <link rel="stylesheet" href="./css/vendors/bootstrap_5.1.0/bootstrap.min.css">
+    <!-- Custom style File-->
+    <link rel="stylesheet" href="./css/app.css">
+
+</head>
+<body>
+    <header>
+        <!-- Navigation Open-->   
+        <nav class="navbar justify-content-between">
+            <a class="navbar__brand" href="#">
+                <img src="./images/logo/Logo1.png" width="35" height="35"  alt="" class="narbar__brand--logo">
+                    ITshop
+            </a>
+            <form class="navbar__search d-flex ">
+                <div class="navbar__search--dropdown ">
+                    <button class="navbar__search--dropdown--btn btn btn-outline-success  dropdown-toggle">Tất cả</button>
+                    <div class="navbar__search--dropdown--content">
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                </div>
+                <input class="navbar__search--input form-control mr-sm-2" placeholder="Bạn cần tìm gì ?" >
+                <button class="navbar__search--btn btn btn-outline-success my-2 my-sm-0" type="submit">
+                    <i class="fas fa-search navbar__search--btn--icon"></i>
+                </button>
+            </form>
+            <a class="navbar__phone d-flex" href="#">
+                <i class=" navbar__phone--icon fas fa-phone-alt"></i>
+                <div></div>
+                <div class="navbar__phone--info d-grid ">
+                    <h4>Gọi mua hàng:</h4>
+                    <h3>1800.2097</h3>
+                </div>
+            </a>
+        </nav>
+        <!-- Navigation Close--> 
+        <!-- Dark mode button Open -->
+        <div class="darkmode">
+            <div class="darkmode-space"></div>
+            <div class="switch">
+                <div class="sun">
+                    <img src="./images/icon/cloud-sun.png" alt="" class="sun-icon" />
+                </div>
+                <div class="flicker"></div>
+                <div class="moon">
+                    <img src="./images/icon/moon.png" alt="" class="moon-icon" />
+                </div>
+            </div>
+        </div>
+        <!-- Dark mode button Close -->
+    </header>
+    
+
+    
+    <!-- Bootstrap Javascript File -->
+    <script src="./scripts/vendors/bootstrap_5.1.0/bootstrap.min.js"></script>
+    <!-- Custom Javascript File -->
+    <script src="./scripts/app.js"></script>
+    
+</body>
+</html>

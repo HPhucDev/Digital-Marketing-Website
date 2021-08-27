@@ -1,0 +1,27 @@
+.main__products{
+    &--items{
+        display: flex;
+    }
+    &--card{
+        display: grid;
+        align-items: center;
+        padding: 2rem;
+        &--image{
+            &-iphone{
+                padding: 1rem 3rem 1rem 3rem;
+                background-color: darkgrey;
+            }
+            &-ipad{
+                padding: 2.5rem 3rem 5rem 3rem;
+                background-color: darkgrey;
+            }
+            &-mac{
+                padding: 2.5rem 3rem 2.5rem 3rem;
+                background-color: darkgrey;
+            }
+        }
+    }
+
+}
+   
+   

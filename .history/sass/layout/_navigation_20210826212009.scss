@@ -1,0 +1,40 @@
+.navbar {
+    border-bottom:1px solid rgba(216, 214, 214, 0.486);
+    box-shadow: 1px 1px rgba(216, 214, 214, 0.486);
+    background-color: rgba(0, 0, 0, 0.8);
+    &__brand{ 
+        display: flex;
+        align-items: center;
+        font-family: 'Michroma',cursive;
+        font-size: 20px;
+        font-weight: 600;
+        text-decoration: none;
+        color:  azure;
+        &--logo{
+            margin-right: 6px;
+        }
+    }  
+    &__tool{
+        &--items{
+            &--links{
+                margin: 0rem  1rem  0rem 1rem;
+                color: azure;
+                text-decoration: none;
+                list-style: none;
+                font-size: 1rem;
+                position: relative;
+            }
+        }
+    }
+    &__search{
+        max-height: 4.2vh;
+        &--btn{
+            background-color: transparent;
+            border: none;    
+            &--icon{
+                color: azure;
+            }
+        }
+    }
+    
+}

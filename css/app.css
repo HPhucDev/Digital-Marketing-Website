@@ -1,0 +1,242 @@
+/*Font Navigation  */
+@font-face {
+  font-family: IBM;
+  src: url("/fonts/IBM_Plex_Sans_Thai/IBMPlexSansThai-Regular.ttf");
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*  Dark Mode Button */
+.darkmode {
+  display: flex;
+  justify-content: space-between;
+  margin: -0.2rem 2rem 0rem 2rem;
+  max-height: 4vh;
+}
+
+.switch {
+  width: 55px;
+  height: 25px;
+  border-radius: 20px;
+  background-color: #181717;
+  display: flex;
+  cursor: pointer;
+}
+
+.flicker {
+  width: 20px;
+  height: 20px;
+  border-radius: 15px;
+  background-color: white;
+  margin-top: 2.5px;
+  margin-left: -21px;
+  transition: 0.4s;
+  box-shadow: inset 4px 4px 4px white, inset -4px -4px 4px rgba(195, 193, 198, 0.9);
+  cursor: pointer;
+}
+
+.sun-icon {
+  opacity: 1;
+  margin-left: 2.6px;
+  margin-top: 1.8px;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+}
+
+.moon-icon {
+  margin-top: 4.4px;
+  margin-left: 11px;
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+}
+
+.dark {
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: 0.3s;
+}
+
+.dark > * {
+  color: white;
+}
+
+.dark .flicker {
+  /*Animation mode */
+  transform: translateX(28px);
+  transition: 0.3s;
+}
+
+/*  Dark Mode Button */
+/* Search Button */
+.navbar {
+  width: 100%;
+  box-shadow: 0px 2px rgba(0, 0, 0, 0.514);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.navbar__brand {
+  margin: 0rem 2rem 0rem 2rem;
+  display: flex;
+  align-items: center;
+  font-family: "IBM", cursive;
+  font-size: 20px;
+  text-decoration: none;
+  color: rgba(245, 245, 247, 0.767);
+}
+.navbar__brand--logo {
+  margin: 0rem 2rem 0rem 2rem;
+  margin-top: 19px;
+}
+.navbar__brand:hover {
+  color: #f5f5f7;
+}
+.navbar__tool--items--links {
+  margin: 0rem 2rem 0rem 2rem;
+}
+.navbar__tool--items--links a {
+  color: rgba(245, 245, 247, 0.767);
+  text-decoration: none;
+  list-style: none;
+  font-family: "IBM", cursive;
+  font-size: 1rem;
+  font-weight: 200;
+  position: relative;
+}
+.navbar__tool--items--links a:hover {
+  color: #f5f5f7;
+}
+.navbar__search--icon {
+  margin: 0rem 1rem 0rem 1rem;
+  font-size: 25px;
+  color: rgba(245, 245, 247, 0.767);
+}
+.navbar__search--icon:hover {
+  color: #f5f5f7;
+}
+.navbar__bag {
+  max-height: 4.2vh;
+}
+.navbar__bag--btn {
+  margin: 0rem 1rem 0rem 1rem;
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  color: rgba(245, 245, 247, 0.767);
+}
+.navbar__bag--btn--icon:hover {
+  color: #f5f5f7;
+}
+.navbar__user {
+  max-height: 4.2vh;
+}
+.navbar__user--btn {
+  margin: 0rem 1rem 0rem 1rem;
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  color: rgba(245, 245, 247, 0.767);
+}
+.navbar__user--btn--icon:hover {
+  color: #f5f5f7;
+}
+
+.main__products--items {
+  display: flex;
+}
+.main__products--card {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  padding: 2rem;
+  position: relative;
+}
+.main__products--card--image-iphone {
+  position: relative;
+  border-radius: 30px;
+  padding: 1rem 1rem 1rem 1rem;
+  background-color: #F2F2F2;
+}
+.main__products--card--image-iphone:hover {
+  background-color: #ececec;
+}
+.main__products--card--image-ipad {
+  position: relative;
+  border-radius: 30px;
+  padding: 1rem 1rem 1rem 1rem;
+  background-color: #F2F2F2;
+}
+.main__products--card--image-ipad:hover {
+  background-color: #ececec;
+}
+.main__products--card--image-mac {
+  position: relative;
+  border-radius: 30px;
+  padding: 1rem 1rem 1rem 1rem;
+  background-color: #F2F2F2;
+}
+.main__products--card--image-mac:hover {
+  background-color: #ececec;
+}
+.main__products--card--title {
+  margin: 30px;
+  font-size: 25px;
+  font-family: "IBM", cursive;
+  font-weight: bolder;
+  text-decoration: none;
+  color: #3b3b3d;
+}
+.main__products--card--title:hover {
+  text-decoration: none;
+  color: rgba(59, 59, 61, 0.671);
+}
