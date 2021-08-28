@@ -241,6 +241,77 @@ table {
   margin-left: 200px;
 }
 
+.main {
+  width: 100%;
+  max-height: 100vh;
+  background-image: url("/images/background/ute.jpg");
+  background-size: cover;
+}
+.main__menu--tool {
+  box-shadow: 4px 4px #5c5c5c42;
+  margin: 30px;
+  display: flex;
+  padding: 35px;
+  background-color: #f0eeee;
+  border-radius: 30px;
+}
+.main__menu--tool-heading, .main__menu--tool-heading-h3, .main__menu--tool-heading-h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #373941;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.main__menu--tool-heading-h2 {
+  font-size: 30px;
+}
+.main__menu--tool-heading-h3 {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+.main__menu--tool-row {
+  margin-bottom: 40px;
+  text-align: center;
+}
+.main__menu--tool-row-button {
+  font-size: 15px;
+  color: #5c5c5c;
+  padding: 40px 30px 40px 30px;
+  margin-bottom: 50px;
+  background-color: #e6e4e4;
+  text-decoration: none;
+  border-radius: 20px;
+}
+.main__menu--tool-row-button:hover {
+  color: #ffffff;
+  background-color: #cecece;
+  text-decoration: none;
+}
+.main__menu--tool-row-link {
+  padding: 40px 120px 40px 120px;
+  font-size: 25px;
+  color: #5c5c5c;
+  background-color: #e6e4e4;
+  text-decoration: none;
+  border-radius: 20px;
+  margin-bottom: 70px;
+}
+.main__menu--tool-row-link:hover {
+  color: #ffffff;
+  background-color: #cecece;
+  text-decoration: none;
+}
+.main__menu--tool-row-comment {
+  border-radius: 20px;
+  margin: 40px;
+  padding: 30px;
+}
+.main__menu--tool-row-comment textarea {
+  resize: vertical;
+  border-radius: 10px;
+  height: 110px;
+}
+
 .main__products--items {
   display: flex;
 }
