@@ -230,6 +230,16 @@ table {
 .footers ul, .copyright ul, .disclaimer ul {
   line-height: 30px;
 }
+.footers-five p {
+  padding-top: 2.6px;
+  font-size: 14px;
+  color: #696969;
+  line-height: 2;
+  text-decoration: none;
+}
+.footers-five-image {
+  margin-left: 200px;
+}
 
 .main__products--items {
   display: flex;

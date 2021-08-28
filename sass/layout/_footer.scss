@@ -11,6 +11,18 @@
     & ul {
         line-height:30px;
     }
+    &-five{
+        & p{
+            padding-top: 2.6px;
+            font-size: 14px;
+            color:#696969;
+            line-height: 2;
+            text-decoration: none;
+        }
+        &-image{
+            margin-left: 200px;
+        }
+    } 
 } 
 .disclaimer{
     @extend .footers;
