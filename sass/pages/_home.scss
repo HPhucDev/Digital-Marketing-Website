@@ -1,56 +1,60 @@
-.main__products{
-    &--items{
-        display: flex;
-    }
-    &--card{
-        display: grid;
-        align-items: center;
-        justify-items: center;
-        padding: 2rem;
-        position: relative;
-        &--image{
-            &-iphone{
-                position: relative;
-                border-radius: 30px;
-                padding: 1rem 1rem 1rem 1rem;
-                background-color: #F2F2F2;
-                &:hover{
-                    background-color:#ececec;
-                }
-            }
-            &-ipad{
-                position: relative;
-                border-radius: 30px;
-                padding: 1rem 1rem 1rem 1rem;
-                background-color: #F2F2F2;
-                &:hover{
-                    background-color:#ececec;
-                }
-            }
-            &-mac{
-                position: relative;
-                border-radius: 30px;
-                padding: 1rem 1rem 1rem 1rem;
-                background-color:#F2F2F2;
-                &:hover{
-                    background-color:#ececec;
-                }
-            }
+.main{
+    &__products{
+        &--items{
+            display: flex;
         }
-        &--title{
-            margin: 30px;
-            font-size: 25px;
-            font-family: 'IBM',cursive;
-            font-weight: bolder;
-            text-decoration: none;
-            color:  rgb(59, 59, 61);
-            &:hover{
+        &--card{
+            display: grid;
+            align-items: center;
+            justify-items: center;
+            padding: 0.8rem;
+            &--image{
+                &-iphone{
+                    position: relative;
+                    border-radius: 20px;
+                    padding: 1rem 3rem 1rem 3rem;
+                    background-color: #F2F2F2;
+                    &:hover{
+                        background-color:#ececec;
+                    }
+                }
+                &-ipad{
+                    @extend .main__products--card--image-iphone;
+                }
+                &-mac{
+                    @extend .main__products--card--image-iphone;
+                } 
+                &-airpod{
+                    @extend .main__products--card--image-iphone;
+                }
+                &-applewatch{
+                    @extend .main__products--card--image-iphone;
+                } 
+                &-accessories{
+                    @extend .main__products--card--image-iphone;
+                }
+            }
+            &--title{
+                margin: 30px;
+                font-size: 25px;
+                font-family:sans-serif;
+                font-weight: bolder;
                 text-decoration: none;
-                color: rgba(59, 59, 61, 0.671);
+                color:  rgb(59, 59, 61);
+                &:hover{
+                    text-decoration: none;
+                    color: rgba(59, 59, 61, 0.671);
+                }
             }
         }
+    
     }
-
+    &__line{
+        
+        width: 80%;
+    }  
+    
 }
+    
    
    

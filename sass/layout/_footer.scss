@@ -1,0 +1,21 @@
+.footers{
+    background-color: (0, 0, 0, 0.8);
+    & a {
+        font-size: 14px;
+        color:#696969;
+        text-decoration: none;
+    }
+    & p {
+        color:#696969;
+    }
+    & ul {
+        line-height:30px;
+    }
+} 
+.disclaimer{
+    @extend .footers;
+}
+.copyright{
+    @extend .footers;
+}
+

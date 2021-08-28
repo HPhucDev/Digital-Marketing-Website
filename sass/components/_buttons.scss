@@ -52,6 +52,29 @@
     transform: translateX(28px);
     transition: 0.3s;
 }
+.dark .main__products--card--image-iphone{
+    background-color: rgba(0, 0, 0, 0.089);
+    &:hover{
+        background-color:rgba(0, 0, 0, 0.205);
+    }
+}
+.dark .main__products--card--title{
+    color:rgba(255, 255, 255, 0.623);
+    &:hover a{
+        background-color:rgba(255, 255, 255, 0.897);
+    }
+}
+.dark .footers {
+    background-color:rgba(0, 0, 0, 0.205);
+    & h5{
+        color:rgba(255, 255, 255, 0.623);
+    }
+}
+.dark .disclaimer{
+    & small{
+        color:rgba(255, 255, 255, 0.623);
+    }
+}
 /*  Dark Mode Button */
 /* Search Button */
 

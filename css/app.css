@@ -24,7 +24,7 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
+  font-family: sans-serif;
   vertical-align: baseline;
 }
 
@@ -118,6 +118,31 @@ table {
   transition: 0.3s;
 }
 
+.dark .main__products--card--image-iphone, .dark .main__products--card--image-accessories, .dark .main__products--card--image-applewatch, .dark .main__products--card--image-airpod, .dark .main__products--card--image-mac, .dark .main__products--card--image-ipad {
+  background-color: rgba(0, 0, 0, 0.089);
+}
+.dark .main__products--card--image-iphone:hover, .dark .main__products--card--image-accessories:hover, .dark .main__products--card--image-applewatch:hover, .dark .main__products--card--image-airpod:hover, .dark .main__products--card--image-mac:hover, .dark .main__products--card--image-ipad:hover {
+  background-color: rgba(0, 0, 0, 0.205);
+}
+
+.dark .main__products--card--title {
+  color: rgba(255, 255, 255, 0.623);
+}
+.dark .main__products--card--title:hover a {
+  background-color: rgba(255, 255, 255, 0.897);
+}
+
+.dark .footers, .dark .copyright, .dark .disclaimer {
+  background-color: rgba(0, 0, 0, 0.205);
+}
+.dark .footers h5, .dark .copyright h5, .dark .disclaimer h5 {
+  color: rgba(255, 255, 255, 0.623);
+}
+
+.dark .disclaimer small {
+  color: rgba(255, 255, 255, 0.623);
+}
+
 /*  Dark Mode Button */
 /* Search Button */
 .navbar {
@@ -191,6 +216,21 @@ table {
   color: #f5f5f7;
 }
 
+.footers, .copyright, .disclaimer {
+  background-color: 0, 0, 0, 0.8;
+}
+.footers a, .copyright a, .disclaimer a {
+  font-size: 14px;
+  color: #696969;
+  text-decoration: none;
+}
+.footers p, .copyright p, .disclaimer p {
+  color: #696969;
+}
+.footers ul, .copyright ul, .disclaimer ul {
+  line-height: 30px;
+}
+
 .main__products--items {
   display: flex;
 }
@@ -198,40 +238,21 @@ table {
   display: grid;
   align-items: center;
   justify-items: center;
-  padding: 2rem;
-  position: relative;
+  padding: 0.8rem;
 }
-.main__products--card--image-iphone {
+.main__products--card--image-iphone, .main__products--card--image-accessories, .main__products--card--image-applewatch, .main__products--card--image-airpod, .main__products--card--image-mac, .main__products--card--image-ipad {
   position: relative;
-  border-radius: 30px;
-  padding: 1rem 1rem 1rem 1rem;
+  border-radius: 20px;
+  padding: 1rem 3rem 1rem 3rem;
   background-color: #F2F2F2;
 }
-.main__products--card--image-iphone:hover {
-  background-color: #ececec;
-}
-.main__products--card--image-ipad {
-  position: relative;
-  border-radius: 30px;
-  padding: 1rem 1rem 1rem 1rem;
-  background-color: #F2F2F2;
-}
-.main__products--card--image-ipad:hover {
-  background-color: #ececec;
-}
-.main__products--card--image-mac {
-  position: relative;
-  border-radius: 30px;
-  padding: 1rem 1rem 1rem 1rem;
-  background-color: #F2F2F2;
-}
-.main__products--card--image-mac:hover {
+.main__products--card--image-iphone:hover, .main__products--card--image-accessories:hover, .main__products--card--image-applewatch:hover, .main__products--card--image-airpod:hover, .main__products--card--image-mac:hover, .main__products--card--image-ipad:hover {
   background-color: #ececec;
 }
 .main__products--card--title {
   margin: 30px;
   font-size: 25px;
-  font-family: "IBM", cursive;
+  font-family: sans-serif;
   font-weight: bolder;
   text-decoration: none;
   color: #3b3b3d;
@@ -239,4 +260,7 @@ table {
 .main__products--card--title:hover {
   text-decoration: none;
   color: rgba(59, 59, 61, 0.671);
+}
+.main__line {
+  width: 80%;
 }
