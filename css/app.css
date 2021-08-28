@@ -173,7 +173,7 @@ table {
   color: rgba(245, 245, 247, 0.767);
   text-decoration: none;
   list-style: none;
-  font-family: "IBM", cursive;
+  font-family: sans-serif;
   font-size: 1rem;
   font-weight: 200;
   position: relative;
@@ -217,7 +217,7 @@ table {
 }
 
 .footers, .copyright, .disclaimer {
-  background-color: 0, 0, 0, 0.8;
+  background-color: #F2F2F2;
 }
 .footers a, .copyright a, .disclaimer a {
   font-size: 14px;
