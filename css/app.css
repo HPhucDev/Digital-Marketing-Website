@@ -252,7 +252,7 @@ table {
   box-shadow: 4px 4px #5c5c5c42;
   display: flex;
   margin: 30px;
-  padding: 35px 70px 35px 70px;
+  padding: 25px 70px 35px 70px;
   background-color: rgba(240, 238, 238, 0.87);
   border-radius: 30px;
 }
