@@ -61,7 +61,7 @@ table {
 .darkmode {
   display: flex;
   justify-content: space-between;
-  margin: -0.2rem 2rem 0rem 2rem;
+  margin: -0.3rem 2rem 0rem 2rem;
   max-height: 4vh;
 }
 
@@ -216,7 +216,127 @@ table {
 .navbar__user--btn--icon:hover {
   color: #f5f5f7;
 }
+.navbar__toggle--btn {
+  display: none;
+  margin: 0rem 1rem 0rem 1rem;
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  color: rgba(245, 245, 247, 0.767);
+}
+.navbar__toggle--btn--icon:hover {
+  color: #f5f5f7;
+}
 
+@media screen and (max-width: 1023px) {
+  .navbar__tool {
+    display: none;
+  }
+
+  .navbar__user--btn {
+    opacity: 0;
+  }
+
+  .navbar__bag--btn {
+    opacity: 0;
+  }
+
+  .navbar__search {
+    opacity: 0;
+  }
+
+  .navbar__toggle--btn {
+    display: block;
+  }
+}
+@media screen and (max-width: 551px) {
+  .navbar__tool {
+    display: none;
+  }
+
+  .navbar__user--btn {
+    display: none;
+  }
+
+  .navbar__bag--btn {
+    opacity: 0;
+  }
+
+  .navbar__search {
+    opacity: 0;
+  }
+
+  .navbar__toggle--btn {
+    display: block;
+  }
+}
+@media screen and (max-width: 481px) {
+  .navbar__tool {
+    display: none;
+  }
+
+  .navbar__user--btn {
+    display: none;
+  }
+
+  .navbar__bag--btn {
+    display: none;
+  }
+
+  .navbar__search {
+    opacity: 0;
+  }
+
+  .navbar__toggle--btn {
+    display: block;
+  }
+}
+@media screen and (max-width: 410px) {
+  .navbar__tool {
+    display: none;
+  }
+
+  .navbar__user--btn {
+    display: none;
+  }
+
+  .navbar__bag--btn {
+    display: none;
+  }
+
+  .navbar__search {
+    display: none;
+  }
+
+  .navbar__toggle--btn {
+    display: block;
+  }
+}
+@media screen and (max-width: 352px) {
+  .navbar__tool {
+    display: none;
+  }
+
+  .navbar__user--btn {
+    display: none;
+  }
+
+  .navbar__bag--btn {
+    display: none;
+  }
+
+  .navbar__search {
+    display: none;
+  }
+
+  .darkmode {
+    display: none;
+  }
+
+  .navbar__toggle--btn {
+    display: block;
+  }
+}
 .footers, .copyright, .disclaimer {
   background-color: #F2F2F2;
 }
@@ -237,9 +357,6 @@ table {
   color: #696969;
   line-height: 2;
   text-decoration: none;
-}
-.footers-five-image {
-  margin-left: 200px;
 }
 
 .main {
