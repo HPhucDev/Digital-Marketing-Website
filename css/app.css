@@ -246,12 +246,13 @@ table {
   max-height: 100vh;
   background-image: url("/images/background/ute.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .main__menu--tool {
   box-shadow: 4px 4px #5c5c5c42;
-  margin: 30px;
   display: flex;
-  padding: 35px;
+  margin: 30px;
+  padding: 35px 70px 35px 70px;
   background-color: rgba(240, 238, 238, 0.87);
   border-radius: 30px;
 }
@@ -260,56 +261,80 @@ table {
   font-weight: bold;
   color: #373941;
   text-align: center;
+  margin-top: 0px;
   margin-bottom: 10px;
 }
 .main__menu--tool-heading-h2 {
-  font-size: 30px;
+  font-size: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .main__menu--tool-heading-h3 {
-  font-size: 30px;
-  margin-bottom: 40px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
 .main__menu--tool-row {
-  margin-bottom: 40px;
   text-align: center;
 }
+.main__menu--tool-row-comment-button {
+  margin-left: 230px;
+}
 .main__menu--tool-row-button {
-  font-size: 15px;
-  color: #5c5c5c;
-  padding: 40px 30px 40px 30px;
-  margin-bottom: 50px;
-  background-color: #e6e4e4;
+  border-radius: 10px;
+  display: block;
+  color: black;
   text-decoration: none;
-  border-radius: 20px;
+  font-weight: bold;
+  background-color: #fffefe;
+  cursor: pointer;
+  box-shadow: 0 5px 10px 0 #e6e4e4bb;
+  margin-bottom: 20px;
+  padding: 5px 30px 5px 30px;
 }
 .main__menu--tool-row-button:hover {
   color: #070707;
-  background-color: #cecece;
+  background-color: #fffefec9;
   text-decoration: none;
 }
-.main__menu--tool-row-link {
-  padding: 40px 120px 40px 120px;
-  font-size: 25px;
-  color: #5c5c5c;
-  background-color: #e6e4e4;
-  text-decoration: none;
-  border-radius: 20px;
-  margin-bottom: 70px;
+.main__menu--tool-row-button-drive {
+  width: 60px;
+  height: 60px;
+  margin: 10px 20px 10px 16px;
 }
-.main__menu--tool-row-link:hover {
-  color: #070707;
-  background-color: #cecece;
-  text-decoration: none;
+.main__menu--tool-row-button-drivetext {
+  margin: 30px 30px 25px 10px;
+  font-size: 20px;
+}
+.main__menu--tool-row-button-group {
+  width: 56px;
+  height: 56px;
+  margin: 10px 20px 10px 20px;
+}
+.main__menu--tool-row-button-grouptext {
+  margin: 30px 30px 25px 10px;
+  font-size: 20px;
+}
+.main__menu--tool-row-button-link {
+  width: 58px;
+  height: 58px;
+  margin: 10px 20px 10px 20px;
+}
+.main__menu--tool-row-button-linktext {
+  margin: 30px 30px 25px 10px;
+  font-size: 20px;
 }
 .main__menu--tool-row-comment {
-  border-radius: 20px;
-  margin: 40px;
-  padding: 30px;
+  margin-left: 10px;
+}
+.main__menu--tool-row-comment-avatar {
+  margin-left: -14px;
 }
 .main__menu--tool-row-comment textarea {
+  width: 100%;
   resize: none;
   border-radius: 10px;
-  height: 110px;
+  height: 170px;
 }
 
 .main__products--items {
