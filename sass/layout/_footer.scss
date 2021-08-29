@@ -27,4 +27,41 @@
 .copyright{
     @extend .footers;
 }
+@include maxw(900px) {
+
+}
+@include maxw(711px) {
+
+}
+@include maxw(600px) {
+
+}
+@include maxw(540px) {
+    .footers{
+        & a{
+            font-size: 13px;
+        }
+        & p{
+            font-size: 13px;
+        }
+        &-five-image{
+            width: 70px;
+        }
+    }
+
+}
+@include maxw(490px) {
+    .footers{
+        & a{
+            font-size: 8px;
+        }
+        & p{
+            font-size: 8px;
+        }
+        &-five-image{
+            width: 30px;
+        }
+    }
+    
+}
 

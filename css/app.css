@@ -359,6 +359,28 @@ table {
   text-decoration: none;
 }
 
+@media screen and (max-width: 540px) {
+  .footers a, .disclaimer a, .copyright a {
+    font-size: 13px;
+  }
+  .footers p, .disclaimer p, .copyright p {
+    font-size: 13px;
+  }
+  .footers-five-image {
+    width: 70px;
+  }
+}
+@media screen and (max-width: 490px) {
+  .footers a, .disclaimer a, .copyright a {
+    font-size: 8px;
+  }
+  .footers p, .disclaimer p, .copyright p {
+    font-size: 8px;
+  }
+  .footers-five-image {
+    width: 30px;
+  }
+}
 .main {
   width: 100%;
   max-height: 100vh;
@@ -487,4 +509,36 @@ table {
 }
 .main__line {
   width: 80%;
+}
+
+@media screen and (max-width: 900px) {
+  .main__products--card {
+    padding: 0.5rem;
+  }
+  .main__products--card--image-iphone, .main__products--card--image-ipad, .main__products--card--image-mac, .main__products--card--image-airpod, .main__products--card--image-applewatch, .main__products--card--image-accessories {
+    padding: 1rem 2rem 1rem 2rem;
+  }
+}
+@media screen and (max-width: 711px) {
+  .main__products--card--image-iphone, .main__products--card--image-ipad, .main__products--card--image-mac, .main__products--card--image-airpod, .main__products--card--image-applewatch, .main__products--card--image-accessories {
+    padding: 0.7rem 1rem 1rem 0.7rem;
+  }
+  .main__products--card--title {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .main__products--card--image-iphone, .main__products--card--image-ipad, .main__products--card--image-mac, .main__products--card--image-airpod, .main__products--card--image-applewatch, .main__products--card--image-accessories {
+    padding: 0.4rem 0.7rem 0.4rem 0.7rem;
+  }
+}
+@media screen and (max-width: 540px) {
+  .main__products--card--title {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 490px) {
+  .main__products--card--title {
+    font-size: 8px;
+  }
 }

@@ -1,3 +1,4 @@
+
 .main{
     &__products{
         &--items{
@@ -49,11 +50,58 @@
         }
     }
     &__line{
-        
         width: 80%;
-    }  
-    
+    }     
 }
-    
+@include maxw(900px) {
+    .main__products--card{
+        padding: 0.5rem;
+        &--image{
+            &-iphone{
+                padding: 1rem 2rem 1rem 2rem;
+            }
+        }
+    }
+}
+@include maxw(711px) {
+    .main__products--card{
+        &--image{
+            &-iphone{
+                padding: 0.7rem 1rem 1rem 0.7rem;
+            }
+        }
+        &--title{
+            font-size: 16px;
+        }
+    }
+   
+}
+@include maxw(600px) {
+    .main__products--card{
+        &--image{
+            &-iphone{
+                padding: 0.4rem 0.7rem 0.4rem 0.7rem;
+            }
+        }
+    }
+
+}
+@include maxw(540px) {
+    .main__products--card{
+        &--title{
+            font-size: 13px;
+        }
+    }
+}
+@include maxw(490px) {
+    .main__products--card{
+        &--title{
+            font-size: 8px;
+        }
+    }
+}
+@include maxw(352px) {
+ 
+}  
    
    
