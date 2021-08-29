@@ -252,7 +252,7 @@ table {
   margin: 30px;
   display: flex;
   padding: 35px;
-  background-color: #f0eeee;
+  background-color: rgba(240, 238, 238, 0.87);
   border-radius: 30px;
 }
 .main__menu--tool-heading, .main__menu--tool-heading-h3, .main__menu--tool-heading-h2 {
@@ -283,7 +283,7 @@ table {
   border-radius: 20px;
 }
 .main__menu--tool-row-button:hover {
-  color: #ffffff;
+  color: #070707;
   background-color: #cecece;
   text-decoration: none;
 }
@@ -297,7 +297,7 @@ table {
   margin-bottom: 70px;
 }
 .main__menu--tool-row-link:hover {
-  color: #ffffff;
+  color: #070707;
   background-color: #cecece;
   text-decoration: none;
 }
@@ -307,7 +307,7 @@ table {
   padding: 30px;
 }
 .main__menu--tool-row-comment textarea {
-  resize: vertical;
+  resize: none;
   border-radius: 10px;
   height: 110px;
 }
