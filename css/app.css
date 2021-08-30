@@ -193,6 +193,7 @@ table {
 .navbar__brand:hover {
   text-decoration: none;
   color: #f5f5f7;
+  transform: scale(1.01);
 }
 .navbar__tool--items--links {
   margin: 0rem 2rem 0rem 2rem;
@@ -592,6 +593,7 @@ table {
 }
 .main__products--card--image-iphone:hover, .main__products--card--image-accessories:hover, .main__products--card--image-applewatch:hover, .main__products--card--image-airpod:hover, .main__products--card--image-mac:hover, .main__products--card--image-ipad:hover {
   background-color: #ececec;
+  transform: scale(1.03);
 }
 .main__products--card--title {
   margin: 30px;
