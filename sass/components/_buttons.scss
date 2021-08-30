@@ -4,8 +4,21 @@
     justify-content: space-between;
     margin: -0.3rem  2rem  0rem 2rem;
     max-height: 4vh;
+    &__mobile{
+        margin: 8px  14px 15px 14px;
+    }
 }
 .switch {
+    width: 55px;
+    height: 25px;
+    border-radius: 20px;
+    background-color: rgb(24, 23, 23);
+    display: flex;
+    cursor: pointer;
+}
+.switch__mobile {
+    margin-top: 10px;
+    margin-left: 24px;
     width: 55px;
     height: 25px;
     border-radius: 20px;
@@ -74,6 +87,26 @@
     & small{
         color:rgba(255, 255, 255, 0.623);
     }
+}
+.dark .navbar__mobile{
+    background-color: rgba(0, 0, 0, 0.952);
+    &--close{
+        color:rgba(255, 255, 255, 0.623);
+    }
+    &--tool{
+        &--items{
+            &-links{
+                & a{
+                    color:rgba(255, 255, 255, 0.623);
+                }
+                &-home{
+                    color:rgb(37,36,37);
+                }
+               
+            }
+        }
+    }
+
 }
 /*  Dark Mode Button */
 /* Search Button */

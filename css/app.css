@@ -64,8 +64,22 @@ table {
   margin: -0.3rem 2rem 0rem 2rem;
   max-height: 4vh;
 }
+.darkmode__mobile {
+  margin: 8px 14px 15px 14px;
+}
 
 .switch {
+  width: 55px;
+  height: 25px;
+  border-radius: 20px;
+  background-color: #181717;
+  display: flex;
+  cursor: pointer;
+}
+
+.switch__mobile {
+  margin-top: 10px;
+  margin-left: 24px;
   width: 55px;
   height: 25px;
   border-radius: 20px;
@@ -141,6 +155,19 @@ table {
 
 .dark .disclaimer small {
   color: rgba(255, 255, 255, 0.623);
+}
+
+.dark .navbar__mobile {
+  background-color: rgba(0, 0, 0, 0.952);
+}
+.dark .navbar__mobile--close {
+  color: rgba(255, 255, 255, 0.623);
+}
+.dark .navbar__mobile--tool--items-links a {
+  color: rgba(255, 255, 255, 0.623);
+}
+.dark .navbar__mobile--tool--items-links-home {
+  color: #252425;
 }
 
 /*  Dark Mode Button */
@@ -227,6 +254,65 @@ table {
 .navbar__toggle--btn--icon:hover {
   color: #f5f5f7;
 }
+.navbar__overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  animation: fadeIn linear 0.3s;
+  z-index: 2;
+}
+.navbar__mobile {
+  position: fixed;
+  width: 320px;
+  height: 100%;
+  right: inherit;
+  max-width: 100%;
+  background-color: #ffffff;
+  animation: animationleft linear 0.3s, opacity linear 0.2s;
+}
+.navbar__mobile--close {
+  font-size: 2rem;
+  color: black;
+}
+.navbar__mobile--tool {
+  margin-top: 40px;
+}
+.navbar__mobile--tool--items-links a {
+  text-decoration: none;
+  list-style: none;
+  display: block;
+  padding: 8px 14px 15px 14px;
+  cursor: pointer;
+  color: black;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+}
+.navbar__mobile--tool--items-links-home {
+  font-size: 40px;
+  margin-left: 28px;
+  margin-right: 17px;
+  margin-bottom: 14px;
+}
+.navbar__mobile--tool--items-links-mac {
+  margin-left: 14px;
+  margin-right: 2px;
+  margin-bottom: 14px;
+}
+.navbar__mobile--tool--items-links-ipad, .navbar__mobile--tool--items-links-access, .navbar__mobile--tool--items-links-airpod, .navbar__mobile--tool--items-links-watch, .navbar__mobile--tool--items-links-iphone {
+  margin-left: 28px;
+  margin-right: 19px;
+  margin-bottom: 14px;
+}
+.navbar__check:checked ~ .navbar__overlay {
+  display: block;
+}
+.navbar__check:checked ~ .navbar__mobile {
+  opacity: 1;
+}
 
 @media screen and (max-width: 1023px) {
   .navbar__tool {
@@ -242,6 +328,10 @@ table {
   }
 
   .navbar__search {
+    opacity: 0;
+  }
+
+  .darkmode {
     opacity: 0;
   }
 
@@ -266,8 +356,8 @@ table {
     opacity: 0;
   }
 
-  .navbar__toggle--btn {
-    display: block;
+  .darkmode {
+    opacity: 0;
   }
 }
 @media screen and (max-width: 481px) {
@@ -308,8 +398,8 @@ table {
     display: none;
   }
 
-  .navbar__toggle--btn {
-    display: block;
+  .darkmode {
+    opacity: 0;
   }
 }
 @media screen and (max-width: 352px) {
@@ -332,9 +422,18 @@ table {
   .darkmode {
     display: none;
   }
-
-  .navbar__toggle--btn {
-    display: block;
+}
+@keyframes animationleft {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  80% {
+    transform: translateX(20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 .footers, .copyright, .disclaimer {
@@ -477,6 +576,9 @@ table {
   height: 170px;
 }
 
+.main__banner {
+  z-index: 1;
+}
 .main__products--items {
   display: flex;
 }
@@ -487,7 +589,6 @@ table {
   padding: 0.8rem;
 }
 .main__products--card--image-iphone, .main__products--card--image-accessories, .main__products--card--image-applewatch, .main__products--card--image-airpod, .main__products--card--image-mac, .main__products--card--image-ipad {
-  position: relative;
   border-radius: 20px;
   padding: 1rem 3rem 1rem 3rem;
   background-color: #F2F2F2;

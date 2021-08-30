@@ -39,7 +39,6 @@
         }
     }
     &__search{
-        
         &--icon{
             margin: 0rem  1rem  0rem 1rem;
             font-size: 25px;
@@ -81,7 +80,7 @@
     }
     &__toggle{
         &--btn{
-            display: none;
+            display:none;
             margin: 0rem  1rem  0rem 1rem;
             background-color: transparent;
             border: none; 
@@ -94,6 +93,83 @@
             }
         }
     }    
+    &__overlay{
+        position: fixed;
+        top:0;
+        bottom:0;
+        right:0;
+        left:0;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: none;
+        animation: fadeIn linear 0.3s;
+        z-index: 2;
+    }
+    &__mobile{
+        position: fixed;
+        width: 320px;
+        height: 100%;
+        right: inherit;
+        max-width: 100%;
+        background-color: #ffffff;
+        animation: animationleft linear 0.3s ,opacity linear 0.2s;
+        &--close{
+            font-size: 2rem;
+            color: black;
+        }
+        &--tool{
+            margin-top: 40px;
+            &--items{
+                &-links{
+                    & a{
+                        text-decoration: none;
+                        list-style: none;
+                        display: block;
+                        padding: 8px  14px 15px 14px;
+                        cursor: pointer;
+                        color: black;
+                        font-family:sans-serif;
+                        font-size: 1.2rem;
+                    }  
+                    &-home{
+                        font-size: 40px;
+                        margin-left: 28px;
+                        margin-right: 17px;
+                        margin-bottom: 14px;
+                    }
+                    &-mac{
+                        margin-left: 14px;
+                        margin-right: 2px;
+                        margin-bottom: 14px;
+                    }
+                    &-ipad{
+                        margin-left: 28px;
+                        margin-right: 19px;
+                        margin-bottom: 14px;
+                    }
+                    &-iphone{
+                        @extend .navbar__mobile--tool--items-links-ipad;
+                    }  
+                    &-watch{
+                        @extend .navbar__mobile--tool--items-links-ipad;
+                    }
+                    &-airpod{
+                        @extend .navbar__mobile--tool--items-links-ipad;
+                    }
+                    &-access{
+                        @extend .navbar__mobile--tool--items-links-ipad;
+                    }
+                }
+            }
+        }
+    }
+    &__check{
+        &:checked~.navbar__overlay{
+            display: block;
+        }
+        &:checked~.navbar__mobile{
+            opacity: 1;
+        }
+    }
 }
 @include maxw(1023px) {
     .navbar__tool{
@@ -106,6 +182,9 @@
         opacity: 0;
     }
     .navbar__search{
+        opacity: 0;
+    }
+    .darkmode{
         opacity: 0;
     }
     .navbar__toggle--btn{
@@ -125,8 +204,8 @@
     .navbar__search{
         opacity: 0;
     }
-    .navbar__toggle--btn{
-        display: block;
+    .darkmode{
+        opacity: 0;
     }
 }
 @include maxw(481px) {
@@ -159,8 +238,8 @@
     .navbar__search{
         display: none;
     }
-    .navbar__toggle--btn{
-        display: block;
+    .darkmode{
+        opacity: 0;
     }
 }
 @include maxw(352px) {
@@ -179,7 +258,17 @@
     .darkmode{
         display: none;
     }
-    .navbar__toggle--btn{
-        display: block;
-    }
 }
+@keyframes animationleft{
+    0%{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    80%{
+        transform: translateX(20%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0)
+    }
+  }

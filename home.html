@@ -90,7 +90,57 @@
             class="navbar__user--btn--icon"
             name="person-circle-outline"
           ></ion-icon>
-        </button>
+        </button>   
+        <input type="checkbox" hidden  id="navbar__mobile--input"  class="navbar__check">
+        <label for="navbar__mobile--input" class="navbar__overlay">
+            <nav class="navbar__mobile ">
+                <label for="navbar__mobile--input" class="navbar__mobile--close">
+                    <ion-icon name="close-outline"></ion-icon>
+                </label>
+                <ul class="navbar__mobile--tool d-grid">
+                    <li class="navbar__mobile--tool--items-links d-flex">
+                      <ion-icon name="home-outline" class="navbar__mobile--tool--items-links-home"></ion-icon>
+                      <a href="./home.html">Trang Chủ</a>
+                    </li>
+                    <li class="navbar__mobile--tool--items-links d-flex">
+                      <img src="./images/icon/Mac.png" width="70px" class="navbar__mobile--tool--items-links-mac">
+                      <a href="#">Mac</a>
+                    </li>
+                    <li class="navbar__mobile--tool--items-links d-flex">
+                      <img src="./images/icon/Ipad.png" width="40px"  class="navbar__mobile--tool--items-links-ipad">
+                      <a href="#">iPad</a>
+                    </li>
+                    <li class="navbar__mobile--tool--items-links d-flex">
+                      <img src="./images/icon/Iphone.png" width="40px" class="navbar__mobile--tool--items-links-iphone">
+                      <a href="#">iPhone</a>
+                    </li>
+                    <li class="navbar__mobile--tool--items-links d-flex">
+                      <img src="./images/icon/AppeWatch.png" width="40px"  class="navbar__mobile--tool--items-links-watch">
+                      <a href="#">Watch</a>
+                    </li>
+                    <li class="navbar__mobile--tool--items-links d-flex">
+                      <img src="./images/icon/Airpod.png" width="40px"  class="navbar__mobile--tool--items-links-airpod">
+                      <a href="#">Music</a>
+                    </li>
+                    <li class="navbar__mobile--tool--items-links d-flex">
+                      <img src="./images/icon/AppleAccessories.png" width="40px" class="navbar__mobile--tool--items-links-access">
+                      <a href="#">Phụ Kiện</a>
+                    </li>
+                </ul>
+                <div class="navbar__mobile--darkmode">
+                  <div class="darkmode-space"></div>
+                  <div class="switch__mobile">
+                    <div class="sun">
+                      <img src="./images/icon/cloud-sun.png" alt="" class="sun-icon" />
+                    </div>
+                    <div class="flicker"></div>
+                    <div class="moon">
+                      <img src="./images/icon/moon.png" alt="" class="moon-icon" />
+                    </div>
+                  </div>
+                </div>
+            </nav>
+        </label>
         <!-- Dark mode button Open -->
         <div class="darkmode">
           <div class="darkmode-space"></div>
@@ -105,9 +155,9 @@
           </div>
         </div>
         <!-- Dark mode button Close -->
-        <button class="navbar__toggle--btn" type="submit">
-          <ion-icon class="navbar__toggle--btn-icon" name="grid-outline"></ion-icon>
-        </button>
+        <label for="navbar__mobile--input" class="navbar__toggle--btn" type="submit">
+            <ion-icon name="reorder-three-outline"></ion-icon>
+        </label>
       </nav>
       <!-- Navigation Close-->
     </header>
@@ -148,7 +198,6 @@
             <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
             <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
           </div>
-          <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
         </div>
       </section>
       <section class= "main__products">
@@ -256,6 +305,9 @@
       </section>
       <!-- Footer Close-->
     </footer>
+
+
+
     <!-- Uikit Javascript File-->
     <script src="./scripts/vendors/uikit_3/uikit.min.js"></script>
     <script src="./scripts/vendors/uikit_3/uikit-icons.min.js"></script>
