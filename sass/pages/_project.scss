@@ -1,0 +1,103 @@
+.main{
+    width: 100%;
+    max-height: 100vh;
+    background-image:linear-gradient(
+        rgba(0, 0, 0, 0.4), 
+        rgba(0, 0, 0, 0.4)
+      ), url('/images/background/ute.jpg'),;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &__menu{       
+        &--tool{
+            box-shadow:4px 4px #5c5c5c42;
+            display: flex;
+            margin: 30px;
+            padding:  25px 70px 35px 70px;
+            background-color: rgba(240, 238, 238, 0.87);
+            border-radius: 30px;
+            &-heading{
+                font-size: 40px;
+                font-weight: bold;
+                color: #373941;
+                text-align: center;
+                margin-top: 0px;
+                margin-bottom: 10px;
+            }
+            &-heading-h2{
+                @extend .main__menu--tool-heading;
+                font-size: 20px;
+                margin-top: 0px;
+                margin-bottom: 0px;
+            }
+            &-heading-h3{
+                @extend .main__menu--tool-heading;
+                font-size: 20px;
+                margin-bottom: 20px;
+                margin-top: 10px;
+            }
+            &-row{
+                text-align: center;
+                &-comment-button{
+                    margin-left: 230px;
+                }
+                &-button{
+                    border-radius: 10px;
+                    display: block;
+                    color: black;
+                    text-decoration: none;
+                    font-weight: bold;
+                    background-color: #fffefe;
+                    cursor: pointer;
+                    box-shadow: 0 5px 10px 0 #e6e4e4bb;
+                    margin-bottom: 20px;
+                    padding: 5px 30px 5px 30px;
+                    &:hover{
+                        color: #070707;
+                        background-color:#f5f5f5;
+                        text-decoration: none;
+                    }
+                    &-drive{
+                        width: 60px;
+                        height: 60px;
+                        margin: 10px 20px 10px 16px;
+                        &text{
+                            margin: 30px 30px 25px 10px;
+                            font-size: 20px
+                        }
+                    }
+                    &-group{
+                        width: 56px;
+                        height: 56px;
+                        margin: 10px 20px 10px 20px;
+                        &text{
+                            margin: 30px 30px 25px 10px;
+                            font-size: 20px
+                        }
+                    }
+                    &-link{
+                        width: 58px;
+                        height: 58px;
+                        margin: 10px 20px 10px 20px;
+                        &text{
+                            margin: 30px 30px 25px 10px;
+                            font-size: 20px
+                        }
+                    }
+                }
+                &-comment{ 
+                    margin-left: 10px;
+                    &-avatar{
+                        margin-left: -14px;
+                    }
+                    & textarea {
+                        width: 100%;
+                        resize:none;
+                        border-radius: 10px;
+                        height: 170px;
+                    }
+                }
+            }
+        }
+    }
+    
+} 
