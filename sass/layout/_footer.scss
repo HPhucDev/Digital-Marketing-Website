@@ -42,7 +42,7 @@
             font-size: 13px;
         }
         & p{
-            font-size: 13px;
+            font-size: 11px;
         }
         &-five-image{
             width: 70px;
@@ -53,10 +53,10 @@
 @include maxw(490px) {
     .footers{
         & a{
-            font-size: 8px;
+            font-size: 13px;
         }
         & p{
-            font-size: 8px;
+            font-size: 11px;
         }
         &-five-image{
             width: 30px;

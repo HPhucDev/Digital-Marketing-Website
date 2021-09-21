@@ -461,7 +461,7 @@ table {
     font-size: 13px;
   }
   .footers p, .disclaimer p, .copyright p {
-    font-size: 13px;
+    font-size: 11px;
   }
   .footers-five-image {
     width: 70px;
@@ -469,10 +469,10 @@ table {
 }
 @media screen and (max-width: 490px) {
   .footers a, .disclaimer a, .copyright a {
-    font-size: 8px;
+    font-size: 13px;
   }
   .footers p, .disclaimer p, .copyright p {
-    font-size: 8px;
+    font-size: 11px;
   }
   .footers-five-image {
     width: 30px;
@@ -593,7 +593,7 @@ table {
   background-color: #f8f7f7;
 }
 .main__products--card--image-iphone:hover, .main__products--card--image-accessories:hover, .main__products--card--image-applewatch:hover, .main__products--card--image-airpod:hover, .main__products--card--image-mac:hover, .main__products--card--image-ipad:hover {
-  box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.16);
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.16);
   transform: scale3d(1.01, 1.01, 1.01);
 }
 .main__products--card--title {
