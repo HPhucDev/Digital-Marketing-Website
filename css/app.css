@@ -579,6 +579,7 @@ table {
 }
 .main__products--items {
   display: flex;
+  flex-wrap: wrap;
 }
 .main__products--card {
   display: grid;
@@ -586,18 +587,14 @@ table {
   justify-items: center;
   padding: 0.8rem;
 }
-.main__products--card:hover {
-  margin-top: -2px;
-}
 .main__products--card--image-iphone, .main__products--card--image-accessories, .main__products--card--image-applewatch, .main__products--card--image-airpod, .main__products--card--image-mac, .main__products--card--image-ipad {
   border-radius: 20px;
   padding: 1rem 3rem 1rem 3rem;
-  background-color: #F2F2F2;
+  background-color: #f8f7f7;
 }
 .main__products--card--image-iphone:hover, .main__products--card--image-accessories:hover, .main__products--card--image-applewatch:hover, .main__products--card--image-airpod:hover, .main__products--card--image-mac:hover, .main__products--card--image-ipad:hover {
-  background-color: #ececec;
-  transform: scale(1.01);
-  margin-top: -2px;
+  box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.16);
+  transform: scale3d(1.01, 1.01, 1.01);
 }
 .main__products--card--title {
   margin: 30px;
@@ -610,16 +607,12 @@ table {
 .main__products--card--title:hover {
   text-decoration: none;
   color: rgba(59, 59, 61, 0.671);
-  margin-top: -2px;
 }
 .main__line {
   width: 80%;
 }
 
 @media screen and (max-width: 900px) {
-  .main__products--card {
-    padding: 0.5rem;
-  }
   .main__products--card--image-iphone, .main__products--card--image-ipad, .main__products--card--image-mac, .main__products--card--image-airpod, .main__products--card--image-applewatch, .main__products--card--image-accessories {
     padding: 1rem 2rem 1rem 2rem;
   }
@@ -643,16 +636,9 @@ table {
   }
 }
 @media screen and (max-width: 490px) {
-  .main__products--card--title {
-    font-size: 8px;
-  }
-
   .main__products--items {
     display: grid;
-    width: 60%;
-    margin-left: 20%;
-  }
-  .main__products--items--card--image-iphone {
-    width: 30%;
+    width: 70%;
+    margin-left: 15%;
   }
 }
