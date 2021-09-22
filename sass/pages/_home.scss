@@ -59,14 +59,9 @@
         width: 80%;
     }     
 }
-
 @include maxw(900px) {
     .main__products--card{
-        &--image{
-            &-iphone{
-                padding: 1rem 2rem 1rem 2rem;
-            }
-        }
+        transform: scale(0.9);
     }
     .main{
         &__banner{

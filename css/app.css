@@ -500,8 +500,7 @@ table {
   background-color: #e4e3e236;
   border-radius: 0px 30px 30px 0px;
   height: 100%;
-  display: flex;
-  padding: 25px 63px 35px 63px;
+  padding: 25px 63px 25px 63px;
 }
 .main__menu--tool-heading, .main__menu--tool-heading-h3, .main__menu--tool-heading-h2 {
   font-size: 40px;
@@ -535,7 +534,7 @@ table {
   cursor: pointer;
   box-shadow: 2px 4px 10px #cac9c9bb;
   margin-bottom: 20px;
-  padding: 5px 53px 5px 35px;
+  padding: 5px 13px 5px 13px;
 }
 .main__menu--tool-row-button:hover {
   color: black;
@@ -573,7 +572,7 @@ table {
 .main__menu--tool-row-comment textarea {
   resize: none;
   border-radius: 10px;
-  height: 100px;
+  height: 90px;
 }
 
 .main__banner {
@@ -618,8 +617,8 @@ table {
 }
 
 @media screen and (max-width: 900px) {
-  .main__products--card--image-iphone, .main__products--card--image-ipad, .main__products--card--image-mac, .main__products--card--image-airpod, .main__products--card--image-applewatch, .main__products--card--image-accessories {
-    padding: 1rem 2rem 1rem 2rem;
+  .main__products--card {
+    transform: scale(0.9);
   }
 
   .main__banner {
