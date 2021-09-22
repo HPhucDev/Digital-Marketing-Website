@@ -1,0 +1,147 @@
+.tool-signin {
+    margin-top:10vh;
+    width: 100%;
+    margin-bottom: 3vh;
+    & .signin{
+        width: 50%;
+        height:80vh;
+        margin-right: 70px;
+        &-label{
+            &-text{
+                font-family:sans-serif;
+                font-weight: bolder;
+                font-size: 38px;
+            }
+        }
+        &-input-account{
+            width: 100%;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: rgba(65, 136, 243, 0.123);
+            outline: none;
+            border: 0;
+            font-size: 20px;
+            margin-bottom: 30px;
+            animation-name:animationleft;
+            animation-duration: 0.6s;
+            &::-webkit-input-placeholder{
+                color: #6464647a;
+                font-weight: 100;
+            }
+            &::-moz-input-placeholder{
+                color: #6464647a;
+                font-weight: 300;
+            }
+        }
+        &-input-password{
+            @extend .signin-input-account;
+            animation-duration: 0.7s;
+        }
+        &-submit{
+            padding: 15px;
+            color: white;
+            font-size: 18px;
+            border: 0;
+            outline: none;
+            width: 100%;
+            border-radius: 14px;
+            background-color: rgb(82, 70, 243);
+            font-family: "Poppins", sans-serif;
+            cursor: pointer;
+            font-weight: 600;
+            box-shadow: 0 5px 10px 0 rgba(11, 95, 173, 0.7);
+            margin-bottom: 10px;
+            animation-name:animationleft;
+            animation-duration: 0.8s;
+            &:hover{
+                background-color: rgb(5, 184, 29);
+                box-shadow: 0 5px 10px 0 rgba(5, 184, 29, 0.7);
+            }
+        }
+        &-or{
+            text-align: center;
+            font-family: "Poppins", sans-serif;
+            font-size: 16px;
+            color: #999;
+            position: relative;
+            animation-name:animationleft;
+            animation-duration: 0.9s;
+            & span {
+                display: inline-block;
+                padding: 2px 15px;
+                background-color:rgb(255, 255, 255);
+                border-radius: 10px;
+                position: relative;
+                z-index: 1;
+            }
+            &:after {
+                content: "";
+                width: 100%;
+                height: 0.5px;
+                background-color: rgb(175, 173, 173);
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+            }
+        }
+        &-social{
+            &-google{
+                height: 60px;
+                width: 70px;
+                margin: 5px 15px 5px 15px ;
+                cursor: pointer;
+                background-color:rgb(255, 255, 255);
+                border-radius: 16px;  
+                border:2px rgb(255, 255, 255);
+                box-shadow: 0 5px 10px 0 rgba(69, 71, 78, 0.5);
+                animation-name:animationleft;
+                animation-duration: 0.9s;
+                &:hover{
+                    background-color: rgb(255, 255, 255);
+                    transform: scale3d(1.07,1.07,1.07);
+                }
+            }
+            &-apple{
+                @extend .signin-social-google;
+                animation-duration: 0.95s;
+            }
+            &-facebook{
+                @extend .signin-social-google;
+                animation-duration: 1s;
+            }
+            &-icon-google{
+                width: 32px;
+                height: 32px;
+                align-items: center;
+                margin:13px 15px 10px 14px;
+            }
+            &-icon-apple{
+                width: 35px;
+                height: 35px;
+                margin:9px 10px 10px 11px;
+            }
+            &-icon-facebook{
+                width: 35px;
+                height: 35px;
+                margin:12px 10px 10px 12px;
+            }
+        }
+        &-already {
+            font-family: "Poppins", sans-serif;
+            text-align: center;
+            font-size: 17px;
+            color: #999;
+            animation-name:animationleft;
+            animation-duration: 1.1s;
+        }
+        &-login-link {
+            color: #2979ff;
+            text-decoration: none;
+            &:hover {
+                font-weight: bolder;
+            }
+        }
+    }
+}
+

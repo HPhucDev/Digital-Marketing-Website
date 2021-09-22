@@ -1,11 +1,350 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ITshop</title>
+    <link rel="icon" href="./images/logo/Logo.png" />
+    <!-- Uikit CSS File  -->
+    <link rel="stylesheet" href="./css/vendors/uikit_3/uikit.min.css" />
+    <!-- Fontawesome icons -->
+    <link
+      rel="stylesheet"
+      href="./css/vendors/fontawesome_5.15.4/all.min.css"
+    />
+    <!-- Bootstrap CSS File -->
+    <link
+      rel="stylesheet"
+      href="./css/vendors/bootstrap_5.1.0/bootstrap.min.css"
+    />
+    <!-- Custom style File-->
+    <link rel="stylesheet" href="./css/app.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Navigation Open-->
+      <nav class="navbar justify-content-center">
+        <a class="navbar__brand" href="./home.html">
+          <img
+            src="./images/logo/Logo.png"
+            width="30"
+            height="30 "
+            class="narbar__brand--logo"
+          />
+          &nbsp; ITshop
+        </a>
+        <div class="navbar__tool">
+          <ul class="navbar__tool--items d-flex">
+            <li class="navbar__tool--items--links">
+              <a href="./home.html">Trang Chủ</a>
+            </li>
+            <li class="navbar__tool--items--links">
+              <a href="#">Mac</a>
+            </li>
+            <li class="navbar__tool--items--links">
+              <a href="#">iPad</a>
+            </li>
+            <li class="navbar__tool--items--links">
+              <a href="#">iPhone</a>
+            </li>
+            <li class="navbar__tool--items--links">
+              <a href="#">Watch</a>
+            </li>
+            <li class="navbar__tool--items--links">
+              <a href="#">Music</a>
+            </li>
+            <li class="navbar__tool--items--links">
+              <a href="#">Phụ Kiện</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar__search">
+          <a class="navbar__search--icon" href="#">
+            <ion-icon name="search-outline"></ion-icon>
+          </a>
+          <div
+            class="navbar__search--dropdown uk-navbar-dropdown"
+            uk-drop="mode: click; cls-drop: uk-navbar-dropdown; boundary: !nav "
+          >
+            <div class="uk-grid-small uk-flex-middle" uk-grid>
+              <div class="uk-width-expand">
+                <form class="uk-search uk-search-navbar uk-width-1-1">
+                  <input
+                    class="uk-search-input"
+                    type="search"
+                    placeholder="Tìm kiếm"
+                    autofocus
+                  />
+                </form>
+              </div>
+              <div class="uk-width-auto">
+                <a class="uk-navbar-dropdown-close" href="#" uk-close></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="navbar__bag--btn" type="submit">
+          <ion-icon
+            class="navbar__bag--btn--icon"
+            name="bag-outline"
+          ></ion-icon>
+        </button>
+        <button class="navbar__user--btn" type="submit">
+          <ion-icon
+            class="navbar__user--btn--icon"
+            name="person-circle-outline"
+          ></ion-icon>
+        </button>
+        <input
+          type="checkbox"
+          hidden
+          id="navbar__mobile--input"
+          class="navbar__check"
+        />
+        <label for="navbar__mobile--input" class="navbar__overlay">
+          <nav class="navbar__mobile">
+            <label for="navbar__mobile--input" class="navbar__mobile--close">
+              <ion-icon name="close-outline"></ion-icon>
+            </label>
+            <ul class="navbar__mobile--tool d-grid">
+              <li class="navbar__mobile--tool--items-links d-flex">
+                <ion-icon
+                  name="home-outline"
+                  class="navbar__mobile--tool--items-links-home"
+                ></ion-icon>
+                <a href="./home.html">Trang Chủ</a>
+              </li>
+              <li class="navbar__mobile--tool--items-links d-flex">
+                <img
+                  src="./images/icon/Mac.png"
+                  width="70px"
+                  class="navbar__mobile--tool--items-links-mac"
+                />
+                <a href="#">Mac</a>
+              </li>
+              <li class="navbar__mobile--tool--items-links d-flex">
+                <img
+                  src="./images/icon/Ipad.png"
+                  width="40px"
+                  class="navbar__mobile--tool--items-links-ipad"
+                />
+                <a href="#">iPad</a>
+              </li>
+              <li class="navbar__mobile--tool--items-links d-flex">
+                <img
+                  src="./images/icon/Iphone.png"
+                  width="40px"
+                  class="navbar__mobile--tool--items-links-iphone"
+                />
+                <a href="#">iPhone</a>
+              </li>
+              <li class="navbar__mobile--tool--items-links d-flex">
+                <img
+                  src="./images/icon/AppeWatch.png"
+                  width="40px"
+                  class="navbar__mobile--tool--items-links-watch"
+                />
+                <a href="#">Watch</a>
+              </li>
+              <li class="navbar__mobile--tool--items-links d-flex">
+                <img
+                  src="./images/icon/Airpod.png"
+                  width="40px"
+                  class="navbar__mobile--tool--items-links-airpod"
+                />
+                <a href="#">Music</a>
+              </li>
+              <li class="navbar__mobile--tool--items-links d-flex">
+                <img
+                  src="./images/icon/AppleAccessories.png"
+                  width="40px"
+                  class="navbar__mobile--tool--items-links-access"
+                />
+                <a href="#">Phụ Kiện</a>
+              </li>
+            </ul>
+            <div class="navbar__mobile--darkmode">
+              <div class="darkmode-space"></div>
+              <div class="switch__mobile">
+                <div class="sun">
+                  <img
+                    src="./images/icon/cloud-sun.png"
+                    alt=""
+                    class="sun-icon"
+                  />
+                </div>
+                <div class="flicker"></div>
+                <div class="moon">
+                  <img src="./images/icon/moon.png" alt="" class="moon-icon" />
+                </div>
+              </div>
+            </div>
+          </nav>
+        </label>
+        <!-- Dark mode button Open -->
+        <div class="darkmode">
+          <div class="darkmode-space"></div>
+          <div class="switch">
+            <div class="sun">
+              <img src="./images/icon/cloud-sun.png" alt="" class="sun-icon" />
+            </div>
+            <div class="flicker"></div>
+            <div class="moon">
+              <img src="./images/icon/moon.png" alt="" class="moon-icon" />
+            </div>
+          </div>
+        </div>
+        <!-- Dark mode button Close -->
+        <label
+          for="navbar__mobile--input"
+          class="navbar__toggle--btn"
+          type="submit"
+        >
+          <ion-icon name="menu-outline"></ion-icon>
+        </label>
+      </nav>
+      <!-- Navigation Close-->
+    </header>
+    <main>
+      <!-- Login Open -->
+      <div class="tool-signin d-flex justify-content-between">
+        <iframe
+          src="https://embed.lottiefiles.com/animation/50124"
+          width="60%"
+        ></iframe>
+        <div class="signin d-grid align-items-center">
+          <div class="signin-label d-flex justify-content-center">
+            <h3 class="signin-label-text">Đăng nhập</h3>
+          </div>
+          <form action="#" class="signin-form" autocomplete="off">
+            <input
+              type="text"
+              id="text"
+              class="signin-input-account"
+              placeholder="Email hoặc số điện thoại"
+            />
+            <input
+              type="password"
+              id="password"
+              class="signin-input-password"
+              placeholder="Mật khẩu"
+            />
+            <a href="#" class="signin-forget"></a>
+            <button class="signin-submit"><span>Đăng nhập</span></button>
+          </form>
+          <div class="signin-or"><span>hoặc tiếp tục với </span></div>
+          <div class="signin-social d-flex justify-content-center">
+            <button class="signin-social-google">
+              <img
+                src="./images/icon/Google.png"
+                alt=""
+                class="signin-social-icon-google"
+              />
+            </button>
+            <button class="signin-social-apple">
+              <img
+                src="./images/icon/Apple.png"
+                alt=""
+                class="signin-social-icon-apple"
+              />
+            </button>
+            <button class="signin-social-facebook">
+              <img
+                src="./images/icon/Facebook.png"
+                alt=""
+                class="signin-social-icon-facebook"
+              />
+            </button>
+          </div>
+          <p class="signin-already">
+            <span>Bạn chưa có tài khoản ?</span>
+            <a href="./signup.html" class="signin-login-link">Đăng ký</a>
+          </p>
+        </div>
+      </div>
+      <!-- Login Close -->
+    </main>
+    <footer>
+      <!-- Footer Open-->
+      <section class="footers pt-5 pb-4">
+        <div class="container pt-3">
+          <div class="row">
+            <div class="footers-two col-xs-12 col-sm-6 col-md-2">
+              <h5>Sản Phẩm</h5>
+              <ul class="list-unstyled">
+                <li><a href="">iPhone</a></li>
+                <li><a href="">iPad</a></li>
+                <li><a href="">Mac</a></li>
+                <li><a href="">AirPod</a></li>
+                <li><a href="">Phụ Kiện</a></li>
+              </ul>
+            </div>
+            <div class="footers-three col-xs-12 col-sm-6 col-md-2">
+              <h5>Dịch Vụ</h5>
+              <ul class="list-unstyled">
+                <li><a href="">Apple Music</a></li>
+                <li><a href="">Apple TV+</a></li>
+                <li><a href="">Apple Fitness+</a></li>
+                <li><a href="">Apple News+</a></li>
+                <li><a href="">Apple Arcade</a></li>
+                <li><a href="">iCloud</a></li>
+                <li><a href="">Apple Store</a></li>
+              </ul>
+            </div>
+            <div class="footers-four col-xs-12 col-sm-6 col-md-2">
+              <h5>Tài Khoản</h5>
+              <ul class="list-unstyled">
+                <li><a href="">Quản lí tài khoản ITshop</a></li>
+                <li><a href=""> Tài khoản Apple store</a></li>
+                <li><a href="">iCloud.com</a></li>
+              </ul>
+            </div>
+            <div class="footers-five col-xs-12 col-sm-6 col-md-6">
+              <h5>Về chúng tôi</h5>
+              <p class="footers-five-info">
+                Với kinh nghiệm và đam mê sản phẩm Apple, sứ mệnh của chúng tôi
+                là mang đến những trải nghiệm tốt nhất về sản phẩm và dịch vụ
+                của Apple đến toàn bộ người dùng Việt Nam.
+              </p>
+              <img
+                src="./images/logo/Logo.png"
+                width="120px"
+                class="footers-five-image"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="copyright pt-2 pb-3">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-md-12 pt-2">
+              <p class="text-muted">
+                © Copyright by Hoang Phuc, Bao Minh, Minh Luan, Ngoc Tin
+                Software Engineering From HCMUTE With Love. Ltd.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Footer Close-->
+    </footer>
+  </body>
+  <!-- Uikit Javascript File-->
+  <script src="./scripts/vendors/uikit_3/uikit.min.js"></script>
+  <script src="./scripts/vendors/uikit_3/uikit-icons.min.js"></script>
+  <!-- Ionicons Javascript File -->
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
+  <!-- Bootstrap Javascript File -->
+  <script src="./scripts/vendors/bootstrap_5.1.0/bootstrap.min.js"></script>
+  <!-- Custom Javascript File -->
+  <script src="./scripts/app.js"></script>
 </html>

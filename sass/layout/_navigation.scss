@@ -82,8 +82,8 @@
     &__toggle{
         &--btn{
             display:none;
-            font-size: 25px;
-            color: rgba(245, 245, 247, 0.767); 
+            font-size: 35px;
+            color: rgba(245, 245, 247, 0.87); 
             &--icon{
                 &:hover{
                     color: rgb(245, 245, 247);
@@ -99,8 +99,11 @@
         left:0;
         background-color: rgba(0, 0, 0, 0.5);
         display: none;
-        animation: fadeIn linear 0.3s;
         z-index: 2;
+        animation: fadein 0.6s;
+        -moz-animation: fadein 0.6s; /* Firefox */
+        -webkit-animation: fadein 0.6s; /* Safari and Chrome */
+        -o-animation: fadein 0.6s; /* Opera */
     }
     &__mobile{
         position: fixed;
@@ -108,8 +111,8 @@
         height: 100%;
         right: inherit;
         max-width: 100%;
-        background-color: #ffffff;
-        animation: animationleft linear 0.3s ,opacity linear 0.2s;
+        background-color: hsl(0, 0%, 100%);
+        animation: animationleft linear 0.4s ,opacity linear 0.5s;
         &--close{
             font-size: 2rem;
             color: black;
@@ -167,8 +170,6 @@
         &:checked~.navbar__mobile{
             opacity: 1;
         }
-
-
     }
 }
 @include maxw(1023px) {
@@ -264,11 +265,50 @@
         opacity: 0;
         transform: translateX(100%);
     }
+    40%{
+        transform: translateX(60%);
+    }
+    60%{
+        transform: translateX(40%);
+    }
     80%{
         transform: translateX(20%);
     }
     100%{
         opacity: 1;
         transform: translateX(0)
+    }
+}
+/*overlay animation*/
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
     }
 }

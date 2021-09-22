@@ -109,5 +109,34 @@
 
 }
 /*  Dark Mode Button */
-/* Search Button */
+.dark .signin-form input{ /*Cuttom Sign in form*/
+    background-color: #47474b;
+    color: #ffff;
+    &::-webkit-input-placeholder{
+        color:#ffff;
+        font-weight: 100;
+    }
+    &::-moz-input-placeholder{
+        color: #ffff;
+        font-weight: 300;
+    }
+}
+.dark .signup-form input{ /*Cuttom Sign up form*/
+    background-color: #47474b;
+    color: #ffff;
+    &::-webkit-input-placeholder{
+        color: #ffff;
+        font-weight: 100;
+    }
+    &::-moz-input-placeholder{
+        color:#ffff;
+        font-weight: 300;
+    }
+}
+.dark .signin-label-text {
+    color:rgb(255, 255, 255);
+}
+.dark .signup-label-text {
+    color:rgb(255, 255, 255);
+}
 

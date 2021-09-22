@@ -1,0 +1,33 @@
+/*Animation*/
+@keyframes animationtop {
+    0%{
+        opacity: 0;
+        transform: translate(0,-100px);
+    }
+    80%{
+        transform: translate(0, -20px);
+    }
+
+    100%{
+        transform: translate(0)
+    }
+  }
+  @keyframes animationleft{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    80%{
+        transform: translateX(20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0)
+    }
+  }
+
+
+
+
+
+
