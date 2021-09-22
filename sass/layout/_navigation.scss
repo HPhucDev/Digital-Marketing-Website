@@ -167,6 +167,8 @@
         &:checked~.navbar__mobile{
             opacity: 1;
         }
+
+
     }
 }
 @include maxw(1023px) {

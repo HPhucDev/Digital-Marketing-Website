@@ -478,20 +478,30 @@ table {
     width: 30px;
   }
 }
+.content {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.39)), url("/images/background/ute.jpg");
+  height: 100vh;
+}
+
 .main {
-  width: 100%;
-  max-height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/images/background/ute.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  display: flex;
+  margin-top: 1.5vh;
+  background-color: #ffffff;
+  box-shadow: 2px 4px 14px #03030342;
+  border-radius: 30px;
+  max-height: 85vh;
+  width: 85%;
+}
+.main__menu {
+  width: 50%;
 }
 .main__menu--tool {
-  box-shadow: 4px 4px #5c5c5c42;
+  margin-right: -2%;
+  background-color: #e4e3e236;
+  border-radius: 0px 30px 30px 0px;
+  height: 100%;
   display: flex;
-  margin: 30px;
-  padding: 25px 70px 35px 70px;
-  background-color: rgba(240, 238, 238, 0.87);
-  border-radius: 30px;
+  padding: 25px 63px 35px 63px;
 }
 .main__menu--tool-heading, .main__menu--tool-heading-h3, .main__menu--tool-heading-h2 {
   font-size: 40px;
@@ -519,19 +529,18 @@ table {
 }
 .main__menu--tool-row-button {
   border-radius: 10px;
-  display: block;
   color: black;
   text-decoration: none;
-  font-weight: bold;
-  background-color: #fffefe;
+  background-color: #ffffff;
   cursor: pointer;
-  box-shadow: 0 5px 10px 0 #e6e4e4bb;
+  box-shadow: 2px 4px 10px #cac9c9bb;
   margin-bottom: 20px;
-  padding: 5px 30px 5px 30px;
+  padding: 5px 53px 5px 35px;
 }
 .main__menu--tool-row-button:hover {
-  color: #070707;
-  background-color: #f5f5f5;
+  color: black;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.16);
+  transform: scale3d(1.01, 1.01, 1.01);
   text-decoration: none;
 }
 .main__menu--tool-row-button-drive {
@@ -561,21 +570,17 @@ table {
   margin: 30px 30px 25px 10px;
   font-size: 20px;
 }
-.main__menu--tool-row-comment {
-  margin-left: 10px;
-}
-.main__menu--tool-row-comment-avatar {
-  margin-left: -14px;
-}
 .main__menu--tool-row-comment textarea {
-  width: 100%;
   resize: none;
   border-radius: 10px;
-  height: 170px;
+  height: 100px;
 }
 
 .main__banner {
   z-index: 1;
+}
+.main__banner--mobile {
+  display: none;
 }
 .main__products--items {
   display: flex;
@@ -615,6 +620,13 @@ table {
 @media screen and (max-width: 900px) {
   .main__products--card--image-iphone, .main__products--card--image-ipad, .main__products--card--image-mac, .main__products--card--image-airpod, .main__products--card--image-applewatch, .main__products--card--image-accessories {
     padding: 1rem 2rem 1rem 2rem;
+  }
+
+  .main__banner {
+    display: none;
+  }
+  .main__banner--mobile {
+    display: block;
   }
 }
 @media screen and (max-width: 711px) {

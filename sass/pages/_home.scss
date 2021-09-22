@@ -2,6 +2,9 @@
     &__banner{
         z-index: 1;
     }
+    &__banner--mobile{
+        display: none;
+    }
     &__products{
         &--items{
             display: flex;
@@ -65,6 +68,14 @@
             }
         }
     }
+    .main{
+        &__banner{
+            display: none;
+            &--mobile{
+                display: block;
+            }
+        }
+    }
 }
 @include maxw(711px) {
     .main__products--card{
@@ -76,8 +87,7 @@
         &--title{
             font-size: 16px;
         }
-    }
-   
+    }   
 }
 @include maxw(600px) {
     .main__products--card{
