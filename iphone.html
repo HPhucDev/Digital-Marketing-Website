@@ -46,7 +46,7 @@
               <a href="#">iPad</a>
             </li>
             <li class="navbar__tool--items--links">
-              <a href="./iphone.html">iPhone</a>
+              <a href="#">iPhone</a>
             </li>
             <li class="navbar__tool--items--links">
               <a href="#">Watch</a>
@@ -90,12 +90,12 @@
             name="bag-outline"
           ></ion-icon>
         </button>
-        <button class="navbar__user--btn" type="submit">
+        <a class="navbar__user--btn" href="./signin.html">
           <ion-icon
             class="navbar__user--btn--icon"
             name="person-circle-outline"
           ></ion-icon>
-        </button>
+        </a>
         <input
           type="checkbox"
           hidden
@@ -207,64 +207,90 @@
       <!-- Navigation Close-->
     </header>
     <main>
-      <!-- Login Open -->
-      <div class="tool-signin d-flex justify-content-between">
-        <iframe
-          src="https://embed.lottiefiles.com/animation/50124"
-          width="60%"
-        ></iframe>
-        <div class="signin d-grid align-items-center">
-          <div class="signin-label d-flex justify-content-center">
-            <h3 class="signin-label-text">Đăng nhập</h3>
-          </div>
-          <form action="#" class="signin-form" autocomplete="off">
-            <input
-              type="text"
-              id="text"
-              class="signin-input-account"
-              placeholder="Email hoặc số điện thoại"
-            />
-            <input
-              type="password"
-              id="password"
-              class="signin-input-password"
-              placeholder="Mật khẩu"
-            />
-            <a href="#" class="signin-forget"></a>
-            <button class="signin-submit"><span>Đăng nhập</span></button>
-          </form>
-          <div class="signin-or"><span>hoặc tiếp tục với </span></div>
-          <div class="signin-social d-flex justify-content-center">
-            <button class="signin-social-google">
-              <img
-                src="./images/icon/Google.png"
-                alt=""
-                class="signin-social-icon-google"
-              />
-            </button>
-            <button class="signin-social-apple">
-              <img
-                src="./images/icon/Apple.png"
-                alt=""
-                class="signin-social-icon-apple"
-              />
-            </button>
-            <button class="signin-social-facebook">
-              <img
-                src="./images/icon/Facebook.png"
-                alt=""
-                class="signin-social-icon-facebook"
-              />
-            </button>
-          </div>
-          <p class="signin-already">
-            <span>Bạn chưa có tài khoản ?</span>
-            <a href="./signup.html" class="signin-login-link">Đăng ký</a>
-          </p>
+      <div class="container">
+        <div class="main__banner--iphone">
+          <p class="main__banner--iphone-logo">iPhone 13 Pro</p>
+          <p class="main__banner--iphone-text">Oh. So. Pro.</p>
+          <img
+            src="./images/banner/iphone13pro-blue.png"
+            class="main__banner--iphone-img"
+          />
         </div>
       </div>
-      <!-- Login Close -->
+      <section class="main__products">
+        <section class="main__products--row">
+          <div class="main__products--items justify-content-center">
+            <div class="main__products--card">
+              <a href="./iphone.html" class="">
+                <img
+                  src="./images/card/iphonecard.png"
+                  width="350px"
+                  height="350px"
+                  class="main__products--card--image-iphone"
+                />
+              </a>
+              <a href="#" class="main__products--card--title">iPhone</a>
+            </div>
+            <div class="main__products--card">
+              <a href href="#" class="">
+                <img
+                  src="./images/card/ipadcard.png"
+                  width="350px"
+                  height="350px"
+                  class="main__products--card--image-ipad"
+                />
+              </a>
+              <a href="#" class="main__products--card--title">iPad</a>
+            </div>
+            <div class="main__products--card">
+              <a href="" class="">
+                <img
+                  src="./images/card/maccard.png"
+                  width="350px"
+                  height="350px"
+                  class="main__products--card--image-mac"
+                />
+              </a>
+              <a href="#" class="main__products--card--title">Mac</a>
+            </div>
+            <div class="main__products--card">
+              <a href="#" class="">
+                <img
+                  src="./images/card/airpodcard.png"
+                  width="350px"
+                  height="350px"
+                  class="main__products--card--image-airpod"
+                />
+              </a>
+              <a href="#" class="main__products--card--title">AirPods</a>
+            </div>
+            <div class="main__products--card">
+              <a href href="#" class="">
+                <img
+                  src="./images/card/applewatchcard.png"
+                  width="350px"
+                  height="350px"
+                  class="main__products--card--image-applewatch"
+                />
+              </a>
+              <a href="#" class="main__products--card--title">Apple Watch</a>
+            </div>
+            <div class="main__products--card">
+              <a href="" class="">
+                <img
+                  src="./images/card/accessoriescard.png"
+                  width="350px"
+                  height="350px"
+                  class="main__products--card--image-accessories"
+                />
+              </a>
+              <a href="#" class="main__products--card--title">Phụ kiện </a>
+            </div>
+          </div>
+        </section>
+      </section>
     </main>
+
     <footer>
       <!-- Footer Open-->
       <section class="footers pt-5 pb-4">
@@ -330,21 +356,22 @@
       </section>
       <!-- Footer Close-->
     </footer>
+
+    <!-- Uikit Javascript File-->
+    <script src="./scripts/vendors/uikit_3/uikit.min.js"></script>
+    <script src="./scripts/vendors/uikit_3/uikit-icons.min.js"></script>
+    <!-- Ionicons Javascript File -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- Bootstrap Javascript File -->
+    <script src="./scripts/vendors/bootstrap_5.1.0/bootstrap.min.js"></script>
+    <!-- Custom Javascript File -->
+    <script src="./scripts/app.js"></script>
   </body>
-  <!-- Uikit Javascript File-->
-  <script src="./scripts/vendors/uikit_3/uikit.min.js"></script>
-  <script src="./scripts/vendors/uikit_3/uikit-icons.min.js"></script>
-  <!-- Ionicons Javascript File -->
-  <script
-    type="module"
-    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-  ></script>
-  <script
-    nomodule
-    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-  ></script>
-  <!-- Bootstrap Javascript File -->
-  <script src="./scripts/vendors/bootstrap_5.1.0/bootstrap.min.js"></script>
-  <!-- Custom Javascript File -->
-  <script src="./scripts/app.js"></script>
 </html>
