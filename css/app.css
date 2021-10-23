@@ -588,21 +588,21 @@ table {
   }
 }
 .content {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.39)), url("/images/background/ute.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.39)), url(" /images/background/ute.jpg");
   height: 100vh;
 }
 
 .main {
   display: flex;
-  margin-top: 1.5vh;
+  margin-top: 0.5vh;
   background-color: #ffffff;
   box-shadow: 2px 4px 14px #03030342;
   border-radius: 30px;
   max-height: 85vh;
-  width: 85%;
+  width: 75%;
 }
 .main__menu {
-  width: 50%;
+  width: 60%;
 }
 .main__menu--tool {
   margin-right: -2%;
@@ -611,7 +611,7 @@ table {
   height: 100%;
   padding: 25px 63px 25px 63px;
 }
-.main__menu--tool-heading, .main__menu--tool-heading-h3, .main__menu--tool-heading-h2 {
+.main__menu--tool-heading, .main__menu--tool-heading-h2 {
   font-size: 40px;
   font-weight: bold;
   color: #373941;
@@ -623,11 +623,6 @@ table {
   font-size: 20px;
   margin-top: 0px;
   margin-bottom: 0px;
-}
-.main__menu--tool-heading-h3 {
-  font-size: 20px;
-  margin-bottom: 20px;
-  margin-top: 10px;
 }
 .main__menu--tool-row {
   text-align: center;
@@ -643,7 +638,7 @@ table {
   cursor: pointer;
   box-shadow: 2px 4px 10px #cac9c9bb;
   margin-bottom: 20px;
-  padding: 5px 13px 5px 13px;
+  padding: 0px 5px 0px 5px;
 }
 .main__menu--tool-row-button:hover {
   color: black;
@@ -678,10 +673,21 @@ table {
   margin: 30px 30px 25px 10px;
   font-size: 20px;
 }
+.main__menu--tool-row-button-exercise {
+  width: 75%;
+  border-radius: 10px;
+  color: black;
+  text-decoration: none;
+  background-color: #ffffff;
+  cursor: pointer;
+  box-shadow: 2px 4px 10px #cac9c9bb;
+  margin-bottom: 20px;
+  padding: 0px 5px 0px 5px;
+}
 .main__menu--tool-row-comment textarea {
   resize: none;
   border-radius: 10px;
-  height: 90px;
+  height: 70px;
 }
 
 .tool-signin {
